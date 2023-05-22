@@ -1,7 +1,7 @@
 <html>
   <div id="container">
     <video controls autoplay loop>
-      <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+      <source src="liquid2.mp4" type="video/mp4">
     </video>
     <div id="changeVideo">!</div>
   </div>
@@ -16,7 +16,7 @@ const changeVideoButton = document.querySelector('#changeVideo')
 changeVideo.addEventListener('click', e => {
   video.pause()
   
-  source.setAttribute('src', 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4')
+  source.setAttribute('src', 'liquid.webm')
   
   video.load()
   video.play()
@@ -28,7 +28,8 @@ changeVideo.addEventListener('click', e => {
 }
 
 video {
-  width: 300px;
+  width: 100%;
+  height: 100%;
 }
 
 #changeVideo {
